@@ -1,0 +1,269 @@
+
+.animais-container {
+    padding: 35px;
+    max-width: 1200px;
+    margin: auto;
+    color: #26352c;
+}
+
+.animais-header {
+    margin-bottom: 25px;
+}
+
+.animais-header p {
+    color: #718078;
+}
+
+.animal-formulario,
+.animal-lista,
+.animal-detalhes {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.animal-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.animal-formulario label {
+    font-weight: 600;
+}
+
+.animal-formulario input,
+.animal-formulario textarea,
+.animal-formulario select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #d4dcd6;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.animal-formulario textarea {
+    min-height: 85px;
+    resize: vertical;
+}
+
+.animal-campos-duplos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.animal-campos-duplos > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.animal-acoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.animal-acoes button,
+.animal-remover-foto {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 7px;
+    background: #23734d;
+    color: white;
+    cursor: pointer;
+}
+
+.animal-acoes .animal-cancelar {
+    background: #64748b;
+}
+
+.animal-acoes .animal-excluir {
+    background: #b43e3e;
+}
+
+.animal-erro {
+    color: #dc2626;
+}
+
+.animal-preview {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.animal-preview img {
+    width: 130px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.animal-remover-foto {
+    background: #64748b;
+}
+
+.animal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.animal-card {
+    padding: 18px;
+    border: 1px solid #e2e8e3;
+    border-radius: 10px;
+}
+
+.animal-card > img,
+.animal-sem-foto {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.animal-sem-foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #edf1ed;
+    color: #718078;
+}
+
+.animal-card p {
+    color: #718078;
+}
+
+/* Detalhes do animal */
+
+.animal-detalhes-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.animal-detalhes-cabecalho p {
+    color: #718078;
+}
+
+.animal-fechar-detalhes {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 7px;
+    background: #64748b;
+    color: white;
+    cursor: pointer;
+}
+
+.animal-dados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 20px;
+    padding: 18px;
+    background: #f5f8f5;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.animal-dados p {
+    margin: 5px 0;
+}
+
+/* Histórico de vacinação */
+
+.animal-vacinacao {
+    border-top: 1px solid #e2e8e3;
+    padding-top: 22px;
+}
+
+.animal-vacinacao h3 {
+    margin-bottom: 20px;
+}
+
+.animal-vacinacao form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.animal-vacinacao .animal-campos-duplos {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.animal-vacinacao .animal-campos-duplos > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.animal-vacinacao input,
+.animal-vacinacao select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #d4dcd6;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.animal-historico-lista {
+    display: grid;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.animal-vacina-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 18px;
+    border: 1px solid #e2e8e3;
+    border-radius: 10px;
+    background: #f9fbf9;
+}
+
+.animal-vacina-card h4 {
+    margin: 0 0 10px;
+    color: #26352c;
+}
+
+.animal-vacina-card p {
+    margin: 5px 0;
+    color: #718078;
+}
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+    .animais-container {
+        padding: 18px;
+    }
+
+    .animal-formulario,
+    .animal-lista,
+    .animal-detalhes {
+        padding: 18px;
+    }
+
+    .animal-campos-duplos,
+    .animal-dados,
+    .animal-vacinacao .animal-campos-duplos {
+        grid-template-columns: 1fr;
+    }
+
+    .animal-detalhes-cabecalho,
+    .animal-vacina-card {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

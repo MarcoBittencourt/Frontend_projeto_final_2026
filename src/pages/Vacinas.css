@@ -1,0 +1,110 @@
+.vacinas-container {
+    padding: 35px;
+    max-width: 1200px;
+    margin: auto;
+    color: #26352c;
+}
+
+.vacinas-header {
+    margin-bottom: 25px;
+}
+
+.vacinas-header p {
+    color: #718078;
+}
+
+.vacina-formulario,
+.vacina-lista {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.vacina-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.vacina-formulario label {
+    font-weight: 600;
+}
+
+.vacina-formulario input,
+.vacina-formulario textarea {
+    padding: 12px;
+    border: 1px solid #d4dcd6;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.vacina-formulario textarea {
+    min-height: 85px;
+    resize: vertical;
+}
+
+.vacina-acoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.vacina-acoes button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 7px;
+    background: #23734d;
+    color: white;
+    cursor: pointer;
+}
+
+.vacina-acoes .vacina-cancelar {
+    background: #64748b;
+}
+
+.vacina-acoes .vacina-excluir {
+    background: #b43e3e;
+}
+
+.vacina-erro {
+    color: #dc2626;
+}
+
+.vacina-vazia {
+    color: #718078;
+    padding: 15px 0;
+}
+
+.vacina-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.vacina-card {
+    padding: 20px;
+    border: 1px solid #e2e8e3;
+    border-radius: 10px;
+}
+
+.vacina-card h3 {
+    margin-top: 0;
+}
+
+.vacina-card p {
+    color: #718078;
+    min-height: 35px;
+}
+
+@media (max-width: 600px) {
+    .vacinas-container {
+        padding: 18px;
+    }
+
+    .vacina-formulario,
+    .vacina-lista {
+        padding: 18px;
+    }
+}

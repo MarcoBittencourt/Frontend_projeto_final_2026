@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { login } from "../services/api";
@@ -8,15 +9,17 @@ export default function Login() {
     const [senha, setSenha] = useState("");
     const [erro, setErro] = useState("");
     const [carregando, setCarregando] = useState(false);
+
     const navigate = useNavigate();
 
     async function handleSubmit(e) {
         e.preventDefault();
         setErro("");
         setCarregando(true);
+
         try {
             await login(email, senha);
-            navigate("/"); // troque pela rota da home do grupo
+            navigate("/");
         } catch (err) {
             setErro(err.message);
         } finally {
