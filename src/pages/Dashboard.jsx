@@ -35,6 +35,12 @@ export default function Dashboard() {
             rota: "/vacinacao",
             icone: "📋",
         },
+        {
+            titulo: "Mensagens",
+            descricao: "Converse com anunciantes e interessados.",
+            rota: "/mensagens",
+            icone: "💬",
+        },
     ];
 
     return (
