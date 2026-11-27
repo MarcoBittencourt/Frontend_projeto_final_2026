@@ -9,6 +9,7 @@ import RotaProtegida from "./components/RotaProtegida";
 import Categorias from "./pages/Categorias";
 import Animais from "./pages/Animais";
 import Vacinas from "./pages/Vacinas";
+import Mensagens from "./pages/Mensagens";
 
 export default function App() {
     return (
@@ -50,6 +51,15 @@ export default function App() {
                     element={
                         <RotaProtegida>
                             <Vacinas />
+                        </RotaProtegida>
+                    }
+                />
+
+                <Route
+                    path="/mensagens"
+                    element={
+                        <RotaProtegida>
+                            <Mensagens />
                         </RotaProtegida>
                     }
                 />
