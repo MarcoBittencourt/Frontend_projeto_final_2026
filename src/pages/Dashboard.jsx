@@ -24,6 +24,12 @@ export default function Dashboard() {
             icone: "📂",
         },
         {
+            titulo: "Anúncios",
+            descricao: "Publique e gerencie os anúncios de adoção.",
+            rota: "/anuncios",
+            icone: "📢",
+        },
+        {
             titulo: "Vacinas",
             descricao: "Gerencie o catálogo de vacinas.",
             rota: "/vacinas",

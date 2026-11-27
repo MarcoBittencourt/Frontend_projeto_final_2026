@@ -10,6 +10,7 @@ import Categorias from "./pages/Categorias";
 import Animais from "./pages/Animais";
 import Vacinas from "./pages/Vacinas";
 import Mensagens from "./pages/Mensagens";
+import Anuncios from "./pages/anuncios";
 
 export default function App() {
     return (
@@ -33,6 +34,15 @@ export default function App() {
                     element={
                         <RotaProtegida>
                             <Animais />
+                        </RotaProtegida>
+                    }
+                />
+
+                <Route
+                    path="/anuncios"
+                    element={
+                        <RotaProtegida>
+                            <Anuncios />
                         </RotaProtegida>
                     }
                 />
